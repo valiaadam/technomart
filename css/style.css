@@ -1,0 +1,16 @@
+html {} body {
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #000000;
+    font-family: "PT Sans", "Cuprum", "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #efefef;
+    margin: 0;
+}
+.container {
+    position: relative;
+    /*background: #ffffff url("../img/technomart-index.jpg") no-repeat 50% 0;*/
+    width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+}
