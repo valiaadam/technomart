@@ -106,20 +106,39 @@
                   <a class="catalog-button">На 350 товаров</a>
               </div>
               <div class="galery">
-                  <!--<figure class="galery-content">
-                      <img src="img/foto-galery.jpg" width="620" height="266" alt="foto-galery">
-                      <img src="img/mask-galery.png" width="620" height="105" alt="mask-galery">
-                  </figure>
-                  <h2>Перфораторы</h2>
-                  <p>Настоящие мужские игрушки</p>-->
-                  <div class="btn gallery-prev">
-                      <a href="#">Назад</a>
+                  <input type="radio" id="btn-1" name="toggle" checked>
+                  <input type="radio" id="btn-2" name="toggle">
+                  <input type="radio" id="btn-left" name="but">
+                  <input type="radio" id="btn-right" name="but">
+                  <div class="slider-controls">
+                      <div class="label">
+                          <label for="btn-1"></label>
+                          <label for="btn-2"></label>
+                      </div>
+                      <div class="button">
+                          <label class="btn" for="btn-left"><span class="icon-left"></span></label>
+                          <label class="btn" for="btn-right"><span class="icon-right"></span></label>
+                      </div>
                   </div>
-                  <div class="btn gallery-next">
-                      <a href="#">Вперёд</a>
-                  </div>
-                  <div class="galery-button">
-                      <a href="#">Открыть каталог</a>
+                  <div class="slides">
+                      <div class="slide">
+                          <div class="slide-text">
+                              <div class="slide-title">Перфораторы</div>
+                              <p>Настоящие мужские игрушки</p>
+                          </div>
+                          <div class="galery-button">
+                              <a href="#">Открыть каталог</a>
+                          </div>
+                      </div>
+                      <div class="slide">
+                          <div class="slide-text">
+                              <div class="slide-title">Дрели</div>
+                              <p>Соседям на радость!</p>
+                          </div>
+                          <div class="galery-button">
+                              <a href="#">Открыть каталог</a>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="delivery">
@@ -232,21 +251,41 @@
               </div>
               <ul class="service-iteams">
                   <li class="service-iteam">
-                      <a class="service-button" href="#">Доставка</a>
+                      <input type="radio" name="servic" id="delivery" checked>
+                      <label class="service-button" for="delivery">Доставка</label>
                   </li>
                   <li class="service-iteam">
-                      <a class="service-button" href="#">Гарантия</a>
+                      <input type="radio" name="servic" id="guarantee">
+                      <label class="service-button" for="guarantee">Гарантия</label>
                   </li>
                   <li class="service-iteam">
-                      <a class="service-button" href="#">Кредит</a>
+                      <input type="radio" name="servic" id="credit">
+                      <label class="service-button" for="credit">Кредит</label>
                   </li>
               </ul>
-              <!--<figure class="service-figure">
-                  <h2>Доставка</h2>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его  на ваш на этаж!</p>
-                  <img src="img/service-shadow.png" width="467" height="261" alt="shadow">
-                  <img src="img/service-care.png" width="206" height="146" alt="care">
-              </figure>-->
+              <div class="sliders-service">
+                  <figure class="slider service-delivery">
+                      <h2>Доставка</h2>
+                      <p>Мы с удовольствием доставим ваш товар прямо<br>
+                      к вашему подъезду совершенно бесплатно!<br>
+                      Ведь мы неплохо заработаем,<br>
+                      поднимая его  на ваш на этаж!</p>
+                  </figure>
+                  <figure class="slider service-guarantee">
+                      <h2>Гарантия</h2>
+                      <p>Если купленный у нас товар поломается или заискрит,<br>
+                      а так же в случае пожара, справоцированного его возгаранием,<br>
+                      вы всегда можете быть уверены в нашей гарантии! Мы обменяем<br>
+                      сгоревший товар на новый.<br>
+                      Дом уж востановите как-нибудь сами!</p>
+                  </figure>
+                  <figure class="slider service-credit">
+                      <h2>Кредит</h2>
+                      <p>Залезть в долговую яму стало проще!<br>
+                      Кредитные консультанты придут к вам на помощь.</p>
+                      <input type="button" value="Отправить заявку">
+                  </figure>
+              </div>
           </section>
           
           <section class="company">
@@ -277,16 +316,20 @@
                   </div>
               </div>
            </section>
-          
-           <!--<form action="#" method="get">
-              <label for="user">Ваше имя:</label>
-              <input id="user" type="text" name="username" value="Представтесь, пожалуйста">
-              <label for="emile">Ваш e-mile:</label>
-              <input id="emile" type="text" name="useremile" value="Для отправки ответа">
-              <label for="text">Текст письма:</label>
-              <textarea id="text" name="text-letter" rows="4" cols="100">В свободной форме</textarea>
-              <input type="submit" name="button-form" value="Отправить">
-          </form>-->
+           <form class="write_us" action="#" method="get">
+               <div class="white">
+                   <input class="cross" type="image" src="img/Cross.png" width="21" height="21" alt="cross">
+                   <label class="left-l" for="user">Ваше имя:</label>
+                   <label class="right-l" for="emile">Ваш e-mile:</label>
+                   <input class="left-i" id="user" type="text" name="username" value="Представтесь, пожалуйста">
+                   <input class="right-i" id="emile" type="text" name="useremile" value="Для отправки ответа">
+                   <label class="center-l" for="text">Текст письма:</label>
+                   <textarea class="center-i" id="text" name="text-letter" rows="5" cols="100">В свободной форме</textarea>
+               </div>
+               <div class="gray">
+                   <input type="submit" name="button-form" value="Отправить">
+               </div>
+           </form>
       </main>
       <footer>
           <div class="container">
