@@ -584,28 +584,21 @@ body {
     line-height: 1;
     color: #ffffff;
 }
-#btn-1:checked ~ .slides .slide:nth-child(1) {
-  display: block;
-}
-#btn-2:checked ~ .slides .slide:nth-child(2) {
-  display: block;
-}
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background: #ee3643;
-}
-
 .btn:nth-child(1) {
     float: left;
 }
 .btn:nth-child(2) {
     float: right;
 }
-#btn-left:checked ~ .slides .slide:nth-child(1) {
+#btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
-#btn-right:checked ~ .slides .slide:nth-child(2) {
+#btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
+}
+#btn-1:checked ~ .slider-controls .label label[for="btn-1"],
+#btn-2:checked ~ .slider-controls .label label[for="btn-2"] {
+  background: #ee3643;
 }
 .galery-button {
     width: 145px;
@@ -1214,19 +1207,18 @@ body {
     margin-top: 30px;
     border-radius: 3px;
 }
-.slider {
+.service-guarantee,
+.service-credit {
     display: none;
 }
-.service-delivery {
-    display: block;
-}
-#delivery:checked ~ .service-delivery {
+
+#delivery:checked ~ .sliders-service .service-delivery {
   display: block;
 }
-#guarantee:checked ~ .service-guarantee {
+#guarantee:checked ~ .sliders-service .service-guarantee {
   display: block;
 }
-#credit:checked ~ .service-credit {
+#credit:checked ~ .sliders-service .service-credit {
   display: block;
 }
 .company {

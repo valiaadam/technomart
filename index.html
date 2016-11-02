@@ -108,16 +108,16 @@
               <div class="galery">
                   <input type="radio" id="btn-1" name="toggle" checked>
                   <input type="radio" id="btn-2" name="toggle">
-                  <input type="radio" id="btn-left" name="but">
-                  <input type="radio" id="btn-right" name="but">
+                  
+                  
                   <div class="slider-controls">
                       <div class="label">
                           <label for="btn-1"></label>
                           <label for="btn-2"></label>
                       </div>
                       <div class="button">
-                          <label class="btn" for="btn-left"><span class="icon-left"></span></label>
-                          <label class="btn" for="btn-right"><span class="icon-right"></span></label>
+                          <label class="btn" for="btn-1"><span class="icon-left"></span></label>
+                          <label class="btn" for="btn-2"><span class="icon-right"></span></label>
                       </div>
                   </div>
                   <div class="slides">
@@ -428,21 +428,26 @@
           link.addEventListener("click", function(event) {
               event.preventDefault();
               popup.classList.add("write_us_show");
-              username.focus();
+              login.focus();
         
       });
+          close.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.remove("write_us_show");
+      });
+          
           var mapOpen = document.querySelector(".js-open-map");
 
           var mapPopup = document.querySelector(".map-big");
           var mapClose = mapPopup.querySelector(".cross-map");
           
           mapOpen.addEventListener("click", function(event) {
-          event.preventDefault();
-          mapPopup.classList.add("map-big-show");
+              event.preventDefault();
+              mapPopup.classList.add("map-big-show");
       });
           mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("map-big-show");
+              event.preventDefault();
+              mapPopup.classList.remove("map-big-show");
       });
       </script>
   </body>
