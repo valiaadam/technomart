@@ -86,9 +86,7 @@ body {
 }
 .info-block {
     background: #293449;
-}
-.info-block:hover {
-    background: #1a212e;
+    color: #ffffff;
 }
 .info-block-iteam {
     display: inline-block;
@@ -97,6 +95,9 @@ body {
     width: 135px;
     padding-top: 12px;
     padding-left: 3px;
+}
+.info-block-iteam-active {
+    background: #ee3643;
 }
 .logo {
     display: inline-block;
@@ -131,8 +132,9 @@ body {
     padding: 0;
 }
 .info-block-iteam input {
+    float: left;
     width: 225px;
-    height: 40px;
+    height: 42px;
     border: none;
     padding-left: 48px;
     background: #293449;
@@ -140,10 +142,6 @@ body {
     line-height: 1.1;
     color: #ffffff;
     text-decoration: none;
-}
-
-.info-block-iteam input:focus {
-    background: #ffffff;
 }
 .info-block-iteam:nth-child(4) {
     width: 138px;
@@ -162,15 +160,12 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-.search {
-    float: left;
-    height: 42px;
-    padding-left: 15px;
-    border: none;
-}
 .search:focus {
     background: #ffffff;
     color: #000000;
+}
+.search:focus ~ .icon-search {
+    color: #ee3643;
 }
 .icon-search,
 .icon-bookmark,
@@ -179,13 +174,15 @@ body {
     height: 18px;
     color: #7f8693;
 }
+.info-block-iteam-active .icon-basket {
+    color: #ee8189;
+}
 .icon-search {
     position: absolute;
     left: 363px;
     top: 12px;
     font-size: 17px;
     line-height: 1.1;
-    color: #7f8693;
 }
 .icon-search:hover {
     color: #ffffff;
@@ -196,9 +193,6 @@ body {
 }
 .icon-basket {
     padding-right: 13px;
-}
-.search:focus .icon-search {
-    color: #ee3643;
 }
 .info-block-iteam:hover .icon-search,
 .info-block-iteam:hover .icon-bookmark,
@@ -222,16 +216,6 @@ body {
 }
 .info-block-iteam:nth-child(3):active .buy-mark{
     color: #9ea0a5;
-}
-.search {
-    float: left;
-    height: 42px;
-    padding-left: 15px;
-    border: none;
-}
-.search:focus {
-    background: #ffffff;
-    color: #000000;
 }
 .user-block {
     min-height: 158px;
@@ -277,6 +261,7 @@ body {
     margin: 0;
     padding-left: 10px;
     padding-top: 5px;
+    color: #32425c;
 }
 .login,
 .check_in {
@@ -320,6 +305,85 @@ body {
     color: #000000;
 }
 .login:active .icon-login{
+    color: #c1c9ce;
+}
+.user {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 300px;
+    margin-top: 46px;
+}
+.user-name {
+    width: 245px;
+    height: 42px;
+    padding-left:55px;
+    padding-top: 2px;
+    background: #ffffff;
+    font-size: 21px;
+    line-height: 1;
+    color: #000000;
+    border: none;
+}
+.user-name:focus {
+    color: #c1c9ce;
+}
+.icon-user,
+.icon-logout {
+    position: absolute;
+    top: 11px;
+    font-size: 21px;
+    line-height: 1;
+    padding-right: 6px;
+    color: #c1c9ce;
+}
+.icon-user {
+    font-size: 19px;
+    top: 13px;
+    left: 13px;
+}
+.icon-logout {
+    right: 10px;
+}
+.user-name:hover ~ .icon-user,
+.user-name:hover ~ .icon-logout {
+    color: #000000;
+}
+.user-name:focus ~ .icon-user,
+.user-name:focus ~ .icon-logout {
+    color: #c1c9ce;
+}
+.user a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #32425c;
+    padding-top: 8px;
+}
+.my_orders {
+    padding-left: 22px;
+    padding-right: 15px;
+}
+.dot {
+    position: absolute;
+    top: 55px;
+    left: 110px;
+    width: 4px;
+    height: 4px;
+    background: #32425c;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+.personal_area {
+    padding-left: 15px;
+}
+.my_orders:hover,
+.personal_area:hover {
+    color: #ee3643;
+}
+.my_orders:active,
+.personal_area:active {
     color: #c1c9ce;
 }
 .main-navigation {
