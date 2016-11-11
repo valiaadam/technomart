@@ -240,7 +240,7 @@ body {
     line-height: 1.7;
 }
 .phone {
-    width: 259px; 
+    width: 259px;
     height: 30px;
     padding-left:5px;
     padding-top: 9px;
@@ -404,7 +404,7 @@ body {
     padding-top: 20px;
 }
 .main-navigation li:first-child {
-    width: 119px; 
+    width: 119px;
     padding-left: 20px;
 }
 .main-navigation li:nth-child(2) {
@@ -526,7 +526,7 @@ body {
     padding-left: 30px;
     margin-left: 23px;
     background: #b86dbd;
-}   
+}
 .catalog-iteam:nth-child(1) .catalog-button:hover,
 .catalog-iteam:nth-child(2) .catalog-button:hover,
 .catalog-iteam:nth-child(3) .catalog-button:hover,
@@ -590,7 +590,7 @@ body {
     padding-left: 23px;
     margin-left: 23px;
     background: #7ebf74;
-}  
+}
 .discounts a {
     font-size: 14px;
     line-height: 1.3;
@@ -1320,7 +1320,7 @@ body {
     line-height: 1.3;
     text-transform: uppercase;
     padding-left: 33px;
-    
+
 }
 .iteam input {
     display: none;
@@ -1375,6 +1375,62 @@ input[type="radio"]:checked + label::before {
 }
 .popular_goods_punchers .goods-iteam:nth-child(n+4) {
     margin-top: 20px;
+}
+.pages {
+    display: inline-block;
+    width: 940px;
+    min-height: 150px;
+    padding-left: 240px;
+    padding-top: 50px;
+}
+.page {
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 27px;
+    text-align: center;
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    border: 1px solid #e1ded7;
+    border-radius: 3px;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+.page:last-child {
+    width: 138px;
+}
+.page:nth-child(1) {
+    background: #ee3643;
+    border: 1px solid #ee3643;
+}
+.page a {
+    text-decoration: none;
+    color: #000000;
+}
+.page:nth-child(1) a {
+     color: #ffffff;
+}
+.info-punchers {
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    background: #f1f5f7;
+    padding-top: 65px;
+    padding-bottom: 75px;
+    padding-left: 132px;
+}
+.info-punchers h3 {
+    font-family: "Cuprum", "PT Sans", "Open Sans", sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 35px;
+}
+.info-punchers p {
+    margin: 0;
 }
 .service {
     position: relative;
@@ -1685,7 +1741,7 @@ input[type="radio"]:checked + label::before {
     width: 441px;
     border: 2px solid #d4d7d8;
     border-radius: 3px;
-    
+
     padding: 0;
     padding-top: 15px;
 }
@@ -1725,7 +1781,7 @@ input[type="radio"]:checked + label::before {
     background: url(../img/Cross.png) no-repeat;
     opacity: 1;
     border: none;
-    
+
 }
 .map-big {
     display: none;
@@ -1820,7 +1876,7 @@ input[type="radio"]:checked + label::before {
      margin-left: 10px;
 }
 .footer-menu-iteam:nth-child(9) {
-    width: 129px; 
+    width: 129px;
     margin-left: 35px;
 }
 .footer-menu-iteam:nth-child(n+6) a {
